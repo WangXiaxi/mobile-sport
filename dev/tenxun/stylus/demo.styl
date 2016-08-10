@@ -1,6 +1,15 @@
 body
 	background #fafafa
 	font-family: Helvetica,STHeiti,Droid Sans Fallback;
+.tod-hot
+	position fixed
+	right 0.625rem
+	bottom 5rem
+	width 3rem
+	height 3.5rem
+	background url(http://img1.gtimg.com/rcdimg/20160810/10/13385664.png) no-repeat
+	background-size 100%
+	z-index 999
 .fix
 	position fixed
 	bottom 0
@@ -115,7 +124,7 @@ body
 				background -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,.9));
 		.medal
 			width 100%
-			padding 5px 7px 0
+			padding 0.3125rem 0.4375rem 0
 			& .tit-bg
 				width 100%
 				border 1px solid #CDDEF0
@@ -123,19 +132,93 @@ body
 				height 1.5625rem
 				background url(http://mat1.gtimg.com/www/mobi/image/jpb_hd.png) no-repeat
 				background-size cover
+				
 				p
 					font-size 0.875rem
 					font-weight bold
 					line-height 1.5625rem
 					padding-left 0.375rem
+					font-family "Microsoft Yahei"
 			& .medalNum
 				width 100%
 				border 1px solid #CDDEF0
 				border-top transparent
-				height 1.875rem
-			
+				height 2rem
+				padding-bottom 0.125rem
+				overflow hidden
+				& .selector
+					width 100%
+					background-color #fff
+					position relative 
+					z-index 100
+					font-family "Microsoft Yahei"
+					font-size 0.875rem
+					color #010101 
+					animation rot 10s 3s infinite linear
+					top -30px
+					& .pub
+						width 100%
+						display flex
+						flex-flow row
+						& li
+							text-align center
+							height 1.875rem
+							line-height 1.875rem
+							position relative
+							&:before
+								content ""
+								display inline-block
+								position absolute
+								height 0.9375rem
+								width 1px
+								left -1px
+								top 0.4375rem
+								background-color #DCDCDC
+								
+						& li:nth-child(2)
+							flex-basis 4.1875rem
+						& li:nth-child(3),& li:nth-child(4),& li:nth-child(5)
+							flex-basis 2.875rem
+						& li:nth-child(6)
+							flex-basis 3.1875rem
+						& li:first-child
+							flex-basis 3rem
+							&:before
+								display none
+							& span
+								display inline-block
+								width 1rem
+								height 1rem
+								background-color #60bb46
+								border-radius 0.1875rem
+								color #fff
+								font-size 0.75rem
+								line-height 1rem
+								vertical-align middle
+								margin-top -0.1875rem
+						& li.pub-li
+							& i
+								display inline-block 
+								width 0.875rem
+								height 0.875rem
+								background-image url(http://mat1.gtimg.com/www/mobi/image/rank_icons2.png)
+								background-size 7.25rem 0.8125rem
+								vertical-align middle
+								margin-top -0.25rem
+								margin-right 0.1875rem
+								background-repeat no-repeat
+							& i.gold
+								background-position 0 0
+							& i.silver
+								background-position -3.375rem 0
+							& i.cop
+								background-position -6.375rem 0
+					& .one
+						& li:first-child
+							& span
+								background-color #ff8327
 			& a.ad
-				margin-top 5px
+				margin-top 0.3125rem
 				display block
 				width 100%
 				border 1px solid #b5dcf2
@@ -153,7 +236,7 @@ body
 					font-weight bold
 	.MainInner
 		width 100%
-		padding 4px 7px 0
+		padding 0.25rem 0.4375rem 0
 		& a.pub
 			display block
 			width 100%
@@ -161,7 +244,7 @@ body
 			padding 0.625rem 0
 			border-bottom 1px solid #eceef0
 			& img
-				 padding 1px 3px
+				 padding 1px 0.1875rem
 				 border 1px solid #e0e0e0
 				 float left
 				 width 4.9375rem
@@ -248,11 +331,12 @@ body
 				color #95a0ac
 	footer
 		background-color #404a54
-		padding 0.625rem 0 0.75rem 0.75rem
+		padding 0.625rem 0 0.75rem 0.5rem
 		overflow hidden
 		position relative
 		font-size 0.8125rem
 		color #95a0ac 
+		line-height 1.5625rem
 		& .cen,.co
 			display block
 		& .ba
@@ -268,3 +352,22 @@ body
 				color #565e61
 				margin-right 0.75rem
 				margin-left 0.75rem
+		& .co
+			font-size 0.5rem
+			line-height 1
+			white-space nowrap
+			color #707982
+@keyframes rot
+	5%
+		top -60px
+	33.333%
+		top -60px
+	38.333%
+		top -90px
+	66.666%
+		top -90px
+	71.666%
+		top -120px
+	100%
+		top -120px	
+				

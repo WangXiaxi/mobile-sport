@@ -8,7 +8,9 @@
 		<title></title>
 	</head>
 	<body>
-		<div class="fix" style="display:none;">
+		<div class="tod-hot">	
+		</div>
+		<div class="fix" style="display:block;">
 			<i class="le"></i>
 			<div class="cen">
 				<h2>查看比赛完整数据</h2>
@@ -39,7 +41,48 @@
 						<p>奥运奖牌榜</p>
 					</div>
 					<div class="medalNum">
-						
+						<div class="selector">
+							<ul class="pub three">
+								<li><span>3</span></li>
+								<li>凶牙利</li>
+								<li class="pub-li"><i class="gold"></i><span>8</span></li>
+								<li class="pub-li"><i class="silver"></i><span>3</span></li>
+								<li class="pub-li"><i class="cop"></i><span>2</span></li>
+								<li>总<span class="all">13</span></li>
+							</ul>
+							<ul class="pub one">
+								<li><span>3</span></li>
+								<li>美国</li>
+								<li class="pub-li"><i class="gold"></i><span>8</span></li>
+								<li class="pub-li"><i class="silver"></i><span>3</span></li>
+								<li class="pub-li"><i class="cop"></i><span>2</span></li>
+								<li>总<span class="all">13</span></li>
+							</ul>
+							<ul class="pub two">
+								<li><span>3</span></li>
+								<li>中国</li>
+								<li class="pub-li"><i class="gold"></i><span>8</span></li>
+								<li class="pub-li"><i class="silver"></i><span>3</span></li>
+								<li class="pub-li"><i class="cop"></i><span>2</span></li>
+								<li>总<span class="all">13</span></li>
+							</ul>
+							<ul class="pub three">
+								<li><span>3</span></li>
+								<li>凶牙利</li>
+								<li class="pub-li"><i class="gold"></i><span>8</span></li>
+								<li class="pub-li"><i class="silver"></i><span>3</span></li>
+								<li class="pub-li"><i class="cop"></i><span>2</span></li>
+								<li>总<span class="all">13</span></li>
+							</ul>
+							<ul class="pub one">
+								<li><span>3</span></li>
+								<li>美国</li>
+								<li class="pub-li"><i class="gold"></i><span>8</span></li>
+								<li class="pub-li"><i class="silver"></i><span>3</span></li>
+								<li class="pub-li"><i class="cop"></i><span>2</span></li>
+								<li>总<span class="all">13</span></li>
+							</ul>
+						</div>
 					</div>
 					<a class="ad">
 						<img src="http://mat1.gtimg.com/www/mobi/image/zsay_logo.png" />
@@ -96,9 +139,7 @@
 					<li><a>首页</a></li>
 					<li><a>首页</a></li>
 					<li><a>首页</a></li>
-					<li><a>首页</a></li>
-					<li><a>首页</a></li>
-					<li><a>首页</a></li>
+
 				</ul>
 			</div>
 			<footer>
@@ -117,5 +158,17 @@
                 setRem();
             };
         setRem();
+	</script>
+	<script>
+		function clickLa(){
+			var la = document.querySelector(".la");
+			var fix = document.querySelector(".fix");
+			console.log(la);
+			la.addEventListener("touchstart",function(){
+				console.log(123);
+				fix.style.display="none";
+			},0);	
+		}
+		clickLa();
 	</script>
 </html>
