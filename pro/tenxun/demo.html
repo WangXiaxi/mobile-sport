@@ -22,9 +22,30 @@
 		<div class="global">
 			<header>
 				<a class="tit-icon"></a>
-				<a class="right"></a>
+				<a class="right click-head"></a>
 				<div style="clear:both;"></div>
 			</header>
+			<div class="fiden">
+				<div class="add"></div>
+				<ul class="botUl">
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+					<li><a>首页</a></li>
+				</ul>
+				<div class="add"></div>
+			</div>
 			<section>
 				<div class="choose">
 					<div class="tit-out">
@@ -51,7 +72,7 @@
 								<li>总<span class="all">13</span></li>
 							</ul>
 							<ul class="pub one">
-								<li><span>3</span></li>
+								<li><span>1</span></li>
 								<li>美国</li>
 								<li class="pub-li"><i class="gold"></i><span>8</span></li>
 								<li class="pub-li"><i class="silver"></i><span>3</span></li>
@@ -59,7 +80,7 @@
 								<li>总<span class="all">13</span></li>
 							</ul>
 							<ul class="pub two">
-								<li><span>3</span></li>
+								<li><span>2</span></li>
 								<li>中国</li>
 								<li class="pub-li"><i class="gold"></i><span>8</span></li>
 								<li class="pub-li"><i class="silver"></i><span>3</span></li>
@@ -75,7 +96,7 @@
 								<li>总<span class="all">13</span></li>
 							</ul>
 							<ul class="pub one">
-								<li><span>3</span></li>
+								<li><span>1</span></li>
 								<li>美国</li>
 								<li class="pub-li"><i class="gold"></i><span>8</span></li>
 								<li class="pub-li"><i class="silver"></i><span>3</span></li>
@@ -139,7 +160,6 @@
 					<li><a>首页</a></li>
 					<li><a>首页</a></li>
 					<li><a>首页</a></li>
-
 				</ul>
 			</div>
 			<footer>
@@ -151,15 +171,15 @@
 
 	</body>
 	<script>
-	    function setRem(){
+
+	</script>
+	<script>
+		function setRem(){
             document.documentElement.style.fontSize = window.innerWidth / 20 + "px";
             }
             window.onresize = function(){
                 setRem();
             };
-        setRem();
-	</script>
-	<script>
 		function clickLa(){
 			var la = document.querySelector(".la");
 			var fix = document.querySelector(".fix");
@@ -169,6 +189,15 @@
 				fix.style.display="none";
 			},0);	
 		}
+		function clickHead(){
+			var clickHead = document.querySelector(".click-head");
+			var fiden = document.querySelector(".fiden");
+			clickHead.addEventListener("touchstart",function(){
+				fiden.style.height = fiden.style.height=="7.125rem"?"0":"7.125rem";
+			},0);	
+		}
+		setRem();
 		clickLa();
+		clickHead();
 	</script>
 </html>

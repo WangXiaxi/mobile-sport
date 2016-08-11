@@ -65,6 +65,8 @@ body
 		background-position 8.6875rem top
 		background-size 8.8125rem 2.75rem
 		font-size 0
+		border-bottom 0.125rem solid #3e86ce
+		
 		& a.tit-icon
 			display block
 			float left
@@ -86,7 +88,7 @@ body
 		width 100%
 		& .choose
 			width 100%
-			padding 0.4375rem 0 0.3125rem 0
+			padding 0.3125rem 0 0.3125rem 0
 			background-color #3e86ce
 			& .tit-out
 				height 1.875rem
@@ -155,7 +157,7 @@ body
 					font-size 0.875rem
 					color #010101 
 					animation rot 10s 3s infinite linear
-					top -30px
+					top -1.875rem
 					& .pub
 						width 100%
 						display flex
@@ -314,21 +316,32 @@ body
 				background-position -2.625rem 0
 				vertical-align middle
 				margin-left 0.3125rem
-				
-	.bot
+				margin-top -0.125rem		
+	.bot,.fiden
 		width 100%
-		background #49535d
-		padding 0.75rem 0
 		overflow hidden
 		& ul
 			& li
 				float left
 				width 20%
 				height 1.75rem
-				line-height 1.75rem
-				text-align center
-				font-size 0.9375rem
-				color #95a0ac
+				text-align center			
+	.bot
+		padding 0.75rem 0
+		background #49535d	
+		color #95a0ac
+		line-height 1.75rem
+		font-size 0.9375rem
+	.fiden
+		background #4998e7
+		color #fff
+		line-height 1.875rem
+		font-size 1.125rem
+		height 0rem
+		overflow hidden
+		transition all 0.3s
+		.add
+			height 0.75rem
 	footer
 		background-color #404a54
 		padding 0.625rem 0 0.75rem 0.5rem
@@ -359,15 +372,15 @@ body
 			color #707982
 @keyframes rot
 	5%
-		top -60px
+		top -3.75rem
 	33.333%
-		top -60px
+		top -3.75rem
 	38.333%
-		top -90px
+		top -5.625rem
 	66.666%
-		top -90px
+		top -5.625rem
 	71.666%
-		top -120px
+		top -7.5rem
 	100%
-		top -120px	
+		top -7.5rem
 				
