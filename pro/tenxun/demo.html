@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="lib/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<title></title>
@@ -50,7 +50,7 @@
 				<div class="choose">
 					<div class="tit-out">
 						<a class="cur">体育</a>
-						<a>NBA</a>
+						<a href="demo-NBA.html">NBA</a>
 					</div>
 				</div>
 				<div class="banner">
@@ -163,41 +163,12 @@
 				</ul>
 			</div>
 			<footer>
-				<a class="cen">[登录]</a>
+				<a class="cen" href="demo-enter.html"><span>[登录]</span></a>
 				<p><a class="feedback">反馈</a><a class="ba">电脑版</a></p>
 				<a class="co">Copyright © 1998 - 2016 Tencent. 腾讯科技（北京）有限公司 All Rights Reserved</a>
 			</footer>
 		</div>
 
 	</body>
-	<script>
-
-	</script>
-	<script>
-		function setRem(){
-            document.documentElement.style.fontSize = window.innerWidth / 20 + "px";
-            }
-            window.onresize = function(){
-                setRem();
-            };
-		function clickLa(){
-			var la = document.querySelector(".la");
-			var fix = document.querySelector(".fix");
-			console.log(la);
-			la.addEventListener("touchstart",function(){
-				console.log(123);
-				fix.style.display="none";
-			},0);	
-		}
-		function clickHead(){
-			var clickHead = document.querySelector(".click-head");
-			var fiden = document.querySelector(".fiden");
-			clickHead.addEventListener("touchstart",function(){
-				fiden.style.height = fiden.style.height=="7.125rem"?"0":"7.125rem";
-			},0);	
-		}
-		setRem();
-		clickLa();
-		clickHead();
-	</script>
+	<script src="js/demo-pub.js"></script>
 </html>
